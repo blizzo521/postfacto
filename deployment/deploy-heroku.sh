@@ -43,12 +43,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 APP_HOST=$1
 SESSION_TIME=${SESSION_TIME:-'""'}
-ADMIN_EMAIL="${ADMIN_EMAIL:-email@example.com}"
-ADMIN_PASSWORD="${ADMIN_PASSWORD:-password}"
+ADMIN_EMAIL="${ADMIN_EMAIL:-morgan.whitney@betterup.co}"
+ADMIN_PASSWORD="${ADMIN_PASSWORD:-post!b0rkb0rk}"
 HEROKU_REGION=${HEROKU_REGION:-'us'}
 
 ASSETS_DIR="$SCRIPT_DIR/../assets"
-CONFIG_DIR="$SCRIPT_DIR/config"
+CONFIG_DIR="$SCRIPT_DIR/heroku/config"
 
 # Prepare assets
 cp "$CONFIG_DIR/config.js" "$ASSETS_DIR/client"
